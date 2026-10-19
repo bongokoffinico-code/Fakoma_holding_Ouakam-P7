@@ -3368,6 +3368,10 @@ table.entry td input{transition:background-color var(--hv-t) var(--hv-ease),colo
 }
 /* Accessibilite : animations desactivees si le systeme le demande */
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+/* Correctif : carte "CA annuel projete" (resume) - le fond degrade etait ecrase par .card{background:var(--paper)!important} */
+#resumeSec .card.rs-lead{background:linear-gradient(135deg,var(--p1),var(--p3))!important;color:#fff!important;border:none!important}
+#resumeSec .card.rs-lead .rs-lab,#resumeSec .card.rs-lead .rs-u,#resumeSec .card.rs-lead .rs-foot{color:#f0e9ff!important}
+#resumeSec .card.rs-lead .rs-val,#resumeSec .card.rs-lead .rs-foot b{color:#fff!important}
 </style>
 </body>
 </html>
